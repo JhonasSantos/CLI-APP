@@ -12,7 +12,7 @@ def _version_callback(value: bool) -> None:
 @app.callback()
 
 def main(
-    version: Optional(bool) = typer.opcional(
+    version: Optional(bool) = typer.opcional( # type: ignore
         None,
         "--version",
         "-v",
